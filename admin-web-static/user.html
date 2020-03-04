@@ -9,6 +9,7 @@
     <link rel="stylesheet" media="screen and (max-width: 660px)" href="assets/css/smallsize.css">
 </head>
 <body>
+	<!-- Header -->
 	<header>
         <div class="col-md-12 col-sm-12 col-xs-12">
 		  		<a class="text-subtitle">Mualim</a> &nbsp; &nbsp; &nbsp; &nbsp;
@@ -22,6 +23,9 @@
 		    	<a href="" class="text-right">Logout</a>	
 		</div>
 	</header>
+	<!-- End of Header -->
+
+	<!-- Body -->
 	<section id="body">
         <div class="col-lg-12 col-md-12 col-sm-12 body">
 			<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 left">
@@ -67,21 +71,24 @@
 					<div class="col-md-12 col-sm-12 col-xs-12 box-4-bawah">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 5px;padding: 0px;">
 							<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="padding-left: 0px;">
-								<input class="form-control" type="text" placeholder="Cari" style="margin-bottom: 5px;height: 30px;">
+								<input class="form-control urutkan" type="text" placeholder="Cari">
 							</div>
-							<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="padding-left: 5px;">
-								<select id="" class="form-control" style="height: 30px;">
+							<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="padding-left: 5px;padding-right: 5px;">
+								<select id="" class="form-control urutkan"
 									<option value="" selected>Urutkan</option>
 									<option value="">Nama</option>
 									<option value="">Umur</option>
 								</select>
 							</div>
-							<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="padding-left: 5px;">
-								<select id="" class="form-control" style="height: 30px;">
+							<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+								<select id="" class="form-control urutkan"
 									<option value="" selected>Sentimen</option>
 									<option value="">Positif</option>
 									<option value="">Negatif</option>
 								</select>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-4 col-xs-6" align="right" style="padding-right: 0px;margin-bottom: 5px;">
+								<div class="btn btn-primary">Tambah</div>
 							</div>
 						</div>
 						<p>
@@ -107,7 +114,14 @@
 							    <td>Laki-Laki</td>
 							    <td>Bengkulu</td>
 							    <td>Positif</td>
-							    <td>Edit | Hapus</td>
+							    <td align="center">
+							    	<a href="#" class="btn btn-warning btn-sm">
+							          	<span class="glyphicon glyphicon-pencil"></span>
+							        </a> 
+									<a href="#" class="btn btn-danger btn-sm">
+							          	<span class="glyphicon glyphicon-trash"></span>
+							        </a>
+							    </td>
 							  </tr>
 							</tbody>
 						</table>
