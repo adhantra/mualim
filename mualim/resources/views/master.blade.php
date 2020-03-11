@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mualim</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/largesize.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 660px)" href="assets/css/mediumsize.css">
+    <link rel="stylesheet" media="screen and (max-width: 660px)" href="assets/css/smallsize.css">
+</head>
+<body>
+	<!-- Header -->
+	<header>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+		  		<a class="text-subtitle">Mualim</a> &nbsp; &nbsp; &nbsp; &nbsp;
+		  		<a href="">
+		  			<span class="glyphicon glyphicon-envelope text-body"></span>
+		  		</a> &nbsp;
+		  		<a href="">
+		  			<span class="glyphicon glyphicon-bell text-body"></span>
+		  		</a>
+			  
+		    	<a href="" class="text-right">Logout</a>	
+		</div>
+	</header>
+	<!-- End of Header -->
+
+	<!-- Body -->
+	<section id="body">
+        <div class="col-lg-12 col-md-12 col-sm-12 body">
+        	<!-- Left Menu -->
+			<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 left">
+				<p class="text-large-left text-center">
+					Monday, 24
+					<br/>
+					11: 05
+				</p>
+				<br>
+				<br>
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="#" class="text-menu">Home</a>
+						</li>
+						<br>
+						<li>
+							<a href="alquran.html" class="text-menu">Al-Qur'an</a>
+						</li>
+						<li>
+							<a href="hadist.html" class="text-menu">Hadists</a>
+						</li>
+						<br>
+						<li>
+							<a href="user.html" class="text-menu">Users</a>
+						</li>
+						<li>
+							<a href="feedback.html" class="text-menu">Feedback</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- End of Left Menu -->
+
+			<!-- Content -->
+			<div class="col-lg-10 col-md-8 col-sm-8 col-xs-12 right">
+				<!-- Alquran -->
+				<section id="content-1">
+        			<div class="col-md-4 col-sm-6 col-xs-12 box-1">
+						<p class="text-center text-title">Al-Qur'an</p>
+						<p class="text-center text-subtitle">100 Ayah</p>
+        			</div>
+				</section>
+				<!-- End of Alquran -->
+
+				<!-- Hadists -->
+				<section id="content-2">
+					<div class="col-md-4 col-sm-6 col-xs-12 box-2">
+						<p class="text-center text-title">Hadists</p>
+						<p class="text-center text-subtitle">200 Hadist</p>
+        			</div>
+				</section>
+				<!-- End of Hadists -->
+
+				<!-- Users -->
+				<section id="content-3">
+					<div class="col-md-4 col-sm-6 col-xs-12 box-3">
+						<p class="text-center text-title">Users</p>
+						<p class="text-center text-subtitle">10 Users</p>
+        			</div>
+				</section>
+				<!-- End of Users -->
+
+				<!-- Sentiment -->
+				<section id="content-4">
+					<div class="col-md-12 col-sm-12 col-xs-12 box-4">
+						<p><a href="">Today</a> &nbsp; <a href="">Week</a> &nbsp; <a href="">Month</a> &nbsp; <a href="">Year</a></p>
+						<p class="text-subtitle">Total Sentiment</p>
+        			</div>
+				</section>
+				<!-- End of Sentiment -->
+			</div>
+			<!-- End of Content -->
+		</div>
+	</section>
+</body>
+</html>
