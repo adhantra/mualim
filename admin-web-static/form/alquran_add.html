@@ -48,6 +48,9 @@
 						<li>
 							<a href="../hadist.html" class="text-menu">Hadists</a>
 						</li>
+						<li>
+							<a href="fikih.html" class="text-menu">Fikih</a>
+						</li>
 						<br>
 						<li>
 							<a href="../user.html" class="text-menu">Users</a>
@@ -65,12 +68,24 @@
 						<br>
 						<form>
 							<div class="form-group col-lg-4 col-md-4">
-								<label for="inputNamaSurah">Surah Name</label>
+								<label for="inputNamaSurah">Surah Name (Arab)</label>
+								<input type="text" class="form-control" id="inputNamaSurah">
+							</div>
+							<div class="form-group col-lg-4 col-md-4">
+								<label for="inputNamaSurah">Surah Name (Latin)</label>
+								<input type="text" class="form-control" id="inputNamaSurah">
+							</div>
+							<div class="form-group col-lg-4 col-md-4">
+								<label for="inputNamaSurah">Surah Name (Indonesian)</label>
 								<input type="text" class="form-control" id="inputNamaSurah">
 							</div>
 							<div class="form-group col-lg-2 col-md-2">
 								<label for="inputNoSurah">Surah No</label>
 								<input type="text" class="form-control" id="inputNoSurah" placeholder="">
+							</div>
+							<div class="form-group col-lg-2 col-md-2">
+								<label for="inputAyat">Ayah</label>
+								<input type="text" class="form-control" id="inputAyat" placeholder="">
 							</div>
 							<div class="form-group col-lg-2 col-md-2">
 								<label for="inputHalaman">Page</label>
@@ -79,10 +94,6 @@
 							<div class="form-group col-lg-2 col-md-2">
 								<label for="inputJuz">Juz</label>
 								<input type="text" class="form-control" id="inputJuz" placeholder="">
-							</div>
-							<div class="form-group col-lg-2 col-md-2">
-								<label for="inputAyat">Ayah</label>
-								<input type="text" class="form-control" id="inputAyat" placeholder="">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
 								<label for="inputArab">Arab</label>
@@ -99,7 +110,11 @@
 								<br>
 								<textarea name="" id="inputIndonesia" cols="148" rows="3"></textarea>
 							</div>
-
+							<div class="form-group col-md-12">
+								<label for="inputTafsir">Tafsir</label>
+								<br>
+								<textarea name="" id="Tafsir" cols="148" rows="3"></textarea>
+							</div>
 							<div class="form-group col-md-12">
 								<label for="inputTag">Tag</label>
 								<br>
