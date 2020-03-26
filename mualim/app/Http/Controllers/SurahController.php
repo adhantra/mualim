@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Surah;
 
 class SurahController extends Controller
 {
@@ -13,7 +14,8 @@ class SurahController extends Controller
      */
     public function index()
     {
-        return view('surah');
+        $surah = Surah::all();
+        return view('surah', ['surah' => $surah]);
     }
 
     /**
@@ -34,7 +36,15 @@ class SurahController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Surah::create([
+            'id' => $request->surah_no,
+            'nama_arab' => $request->nama_arab,
+            'nama_latin' => $request->nama_latin,
+            'nama_indonesia' => $request->nama_indonesia,
+            'total_ayah' => $request->total_ayah
+        ]);
+ 
+        return redirect('/surah');
     }
 
     /**
@@ -56,7 +66,8 @@ class SurahController extends Controller
      */
     public function edit($id)
     {
-        //
+        $surah = Surah::find($id);
+        return view('surah_edit', ['surah'=>$surah]);
     }
 
     /**
@@ -68,7 +79,14 @@ class SurahController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $surah = Surah::find($id);
+        $surah->nama_arab = $request->nama_arab;
+        $surah->nama_latin = $request->nama_latin;
+        $surah->nama_indonesia = $request->nama_indonesia;
+        $surah->total_ayah = $request->total_ayah;
+        $surah->save();
+
+        return redirect('/surah');
     }
 
     /**
@@ -79,6 +97,8 @@ class SurahController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $surah = Surah::find($id);
+        $surah->delete();
+        return redirect('/surah');
     }
 }

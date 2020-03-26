@@ -20,7 +20,7 @@
                 </select>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-4 col-xs-6" align="right" style="padding-right: 0px;margin-bottom: 5px;">
-                <a class="btn btn-primary" href="/ayah_add">Add</a>
+                <a class="btn btn-primary" href="/ayah/add">Add</a>
             </div>
         </div>
         <p>
