@@ -21,7 +21,7 @@ class AyahController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
         $nama = $request->nama;
 
@@ -46,7 +46,7 @@ class AyahController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
         // Get Total Ayah
         $total = Ayah::count();
@@ -69,7 +69,7 @@ class AyahController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
         return view('ayah_add', ['day' => $day, 'time' => $time]);
     }
@@ -124,7 +124,7 @@ class AyahController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
         // Find By ID
         $ayah = Ayah::find($id);

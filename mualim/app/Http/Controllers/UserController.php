@@ -20,7 +20,7 @@ class UserController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
 
         return view('user', ['day' => $day, 'time' => $time]);

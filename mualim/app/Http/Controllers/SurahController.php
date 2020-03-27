@@ -21,7 +21,7 @@ class SurahController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
         $nama = $request->nama;
 
@@ -46,7 +46,7 @@ class SurahController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
         // Get Total Surah
         $total = Surah::count();
@@ -69,7 +69,7 @@ class SurahController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
         // Return to View Surah Add Page
         return view('surah_add', ['day' => $day, 'time' => $time]);
@@ -121,7 +121,7 @@ class SurahController extends Controller
         // Get Hours and Minutes
         $time = Carbon::now();
         $time->timezone('Asia/Jakarta');
-        $time = $time->format('h:i');
+        $time = $time->format('H:i');
 
         // Find By ID
         $surah = Surah::find($id);
