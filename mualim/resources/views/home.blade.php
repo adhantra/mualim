@@ -6,7 +6,7 @@
 <section id="content-1">
     <div class="col-md-6 col-sm-6 col-xs-12 box-1">
         <p class="text-center text-title">Al-Qur'an</p>
-        <p class="text-center text-subtitle">5 Surah</p>
+        <p class="text-center text-subtitle">{{ $total_surah }} Surah</p>
     </div>
 </section>
 <!-- End of Alquran -->

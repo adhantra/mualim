@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
+// Routes for Home
+Route::get('/', 'HomeController@index');
 
 // Routes for Surah
 Route::get('/surah', 'SurahController@index');
+Route::get('/surah/find', 'SurahController@find');
 Route::get('/surah/add', 'SurahController@create');
 Route::post('/surah/store', 'SurahController@store');
 Route::get('/surah/edit/{id}', 'SurahController@edit');
@@ -29,8 +29,12 @@ Route::get('/surah/delete/{id}', 'SurahController@destroy');
 
 // Routes for Ayah
 Route::get('/ayah', 'AyahController@index');
+Route::get('/ayah/find', 'AyahController@find');
 Route::get('/ayah/add', 'AyahController@create');
 Route::post('/ayah/store', 'AyahController@store');
+Route::get('/ayah/edit/{id}', 'AyahController@edit');
+Route::put('/ayah/update/{id}', 'AyahController@update');
+Route::get('/ayah/delete/{id}', 'AyahController@destroy');
 
 
 // Routes for User

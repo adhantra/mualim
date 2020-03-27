@@ -58,7 +58,7 @@ body {
 	height: 500px;
 	background-color: #FFF;
 	border: 5px solid #DDD;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .text-large-left {
@@ -91,7 +91,7 @@ body {
 	padding: 30px;
 	background-color: #FFF;
 	border: 5px solid #DDD;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .box-1-alquran {
@@ -99,7 +99,7 @@ body {
 	padding: 0px 30px 20px 30px;
 	background-color: #FFF;
 	border: 5px solid #DDD;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .box-4 {
@@ -108,12 +108,12 @@ body {
 	margin-top: 20px;
 	background-color: #FFF;
 	border: 5px solid #DDD;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .box-4-bawah {
 	padding: 30px;
 	background-color: #FFF;
 	border: 5px solid #DDD;
-	border-radius: 20px;
+	border-radius: 15px;
 }

@@ -3,10 +3,36 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 use App\Surah;
 
 class SurahController extends Controller
 {
+    /**
+     *
+     * Search
+     * 
+     */
+    public function find(Request $request)
+    {
+        // Get Name of Day and Day
+        $day = Carbon::now()->format('l, d');
+
+        // Get Hours and Minutes
+        $time = Carbon::now();
+        $time->timezone('Asia/Jakarta');
+        $time = $time->format('h:i');
+
+        $nama = $request->nama;
+
+        // Get Total Surah
+        $total = Surah::count();
+
+        // Find Based Name
+        $find = Surah::where('nama_latin', 'LIKE', "%".$nama."%")->get();
+        return view('surah', ['day' => $day, 'time' => $time, 'surah' => $find, 'total' => $total]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,8 +40,20 @@ class SurahController extends Controller
      */
     public function index()
     {
+        // Get Name of Day and Day
+        $day = Carbon::now()->format('l, d');
+
+        // Get Hours and Minutes
+        $time = Carbon::now();
+        $time->timezone('Asia/Jakarta');
+        $time = $time->format('h:i');
+
+        // Get Total Surah
+        $total = Surah::count();
+
+        // Select All from Surah
         $surah = Surah::all();
-        return view('surah', ['surah' => $surah]);
+        return view('surah', ['day' => $day, 'time' => $time, 'surah' => $surah, 'total' => $total]);
     }
 
     /**
@@ -25,7 +63,16 @@ class SurahController extends Controller
      */
     public function create()
     {
-        return view('surah_add');
+        // Get Name of Day and Day
+        $day = Carbon::now()->format('l, d');
+
+        // Get Hours and Minutes
+        $time = Carbon::now();
+        $time->timezone('Asia/Jakarta');
+        $time = $time->format('h:i');
+
+        // Return to View Surah Add Page
+        return view('surah_add', ['day' => $day, 'time' => $time]);
     }
 
     /**
@@ -36,6 +83,7 @@ class SurahController extends Controller
      */
     public function store(Request $request)
     {
+        // Add Into Database
         Surah::create([
             'id' => $request->surah_no,
             'nama_arab' => $request->nama_arab,
@@ -44,6 +92,7 @@ class SurahController extends Controller
             'total_ayah' => $request->total_ayah
         ]);
  
+        // Back to Surah Page
         return redirect('/surah');
     }
 
@@ -66,8 +115,17 @@ class SurahController extends Controller
      */
     public function edit($id)
     {
+        // Get Name of Day and Day
+        $day = Carbon::now()->format('l, d');
+
+        // Get Hours and Minutes
+        $time = Carbon::now();
+        $time->timezone('Asia/Jakarta');
+        $time = $time->format('h:i');
+
+        // Find By ID
         $surah = Surah::find($id);
-        return view('surah_edit', ['surah'=>$surah]);
+        return view('surah_edit', ['day' => $day, 'time' => $time, 'surah'=>$surah]);
     }
 
     /**

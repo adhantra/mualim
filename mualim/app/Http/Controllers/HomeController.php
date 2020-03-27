@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use App\Surah;
 
-class UserController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -22,8 +23,9 @@ class UserController extends Controller
         $time->timezone('Asia/Jakarta');
         $time = $time->format('h:i');
 
-
-        return view('user', ['day' => $day, 'time' => $time]);
+        // Get Total Surah
+        $total_surah = Surah::count();
+        return view('home', ['day' => $day, 'time' => $time, 'total_surah' => $total_surah]);
     }
 
     /**
