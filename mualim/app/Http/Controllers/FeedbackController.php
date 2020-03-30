@@ -117,7 +117,7 @@ class FeedbackController extends Controller
      * @param  \App\Feedback  $feedback
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Feedback $id)
+    public function destroy($id)
     {
         $feedback = Feedback::find($id);
         $feedback->delete();

@@ -44,3 +44,4 @@ Route::get('/user', 'UserController@index');
 // Routes for Feedback
 Route::get('/feedback', 'FeedbackController@index');
 Route::get('/feedback/find', 'FeedbackController@find');
+Route::get('/feedback/delete/{id}', 'FeedbackController@destroy');
