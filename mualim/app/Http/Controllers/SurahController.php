@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Surah;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
-use App\Surah;
 
 class SurahController extends Controller
 {

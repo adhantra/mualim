@@ -2,7 +2,7 @@
 
 @section('content')
 
-<!-- Alquran -->
+<!-- Alquran - Surah -->
 <section id="content-1">
     <div class="col-md-6 col-sm-6 col-xs-12 box-1">
         <p class="text-center text-title">Al-Qur'an</p>
@@ -11,11 +11,29 @@
 </section>
 <!-- End of Alquran -->
 
+<!-- Alquran - Ayah -->
+<section id="content-1">
+    <div class="col-md-6 col-sm-6 col-xs-12 box-1">
+        <p class="text-center text-title">Al-Qur'an</p>
+        <p class="text-center text-subtitle">{{ $total_ayah }} Ayah</p>
+    </div>
+</section>
+<!-- End of Alquran -->
+
 <!-- Users -->
 <section id="content-3">
     <div class="col-md-6 col-sm-6 col-xs-12 box-3">
         <p class="text-center text-title">Users</p>
-        <p class="text-center text-subtitle">2 Users</p>
+        <p class="text-center text-subtitle">1 Users</p>
+    </div>
+</section>
+<!-- End of Users -->
+
+<!-- Users -->
+<section id="content-3">
+    <div class="col-md-6 col-sm-6 col-xs-12 box-3">
+        <p class="text-center text-title">Feedback</p>
+        <p class="text-center text-subtitle">{{ $total_feedback }} Feedback</p>
     </div>
 </section>
 <!-- End of Users -->

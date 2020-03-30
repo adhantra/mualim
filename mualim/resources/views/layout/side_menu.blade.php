@@ -13,10 +13,7 @@
 			</li>
 			<br>
 			<li>
-				<a href="#" class="text-menu">Al-Qur'an</a>
-			</li>
-			<li>
-				<a href="/surah" class="text-menu">- &nbsp; Surah</a>
+				<a href="/surah" class="text-menu">Al-Qur'an</a>
 			</li>
 			<li>
 				<a href="/ayah" class="text-menu">- &nbsp; Ayah</a>

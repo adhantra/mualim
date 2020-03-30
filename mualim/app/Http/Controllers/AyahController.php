@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Ayah;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
-use App\Ayah;
 
 class AyahController extends Controller
 {

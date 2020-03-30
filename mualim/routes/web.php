@@ -39,3 +39,8 @@ Route::get('/ayah/delete/{id}', 'AyahController@destroy');
 
 // Routes for User
 Route::get('/user', 'UserController@index');
+
+
+// Routes for Feedback
+Route::get('/feedback', 'FeedbackController@index');
+Route::get('/feedback/find', 'FeedbackController@find');
