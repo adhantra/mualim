@@ -4,7 +4,7 @@
 
 <section id="content-1">
     <div class="col-md-12 col-sm-12 col-xs-12 box-1-alquran">
-        <p class="text-title-box">Edit Ayah Al-Qur'an</p>
+        <p class="text-title-box">Edit Ayah Al-Quran</p>
         <br>
         <form method="post" action="/ayah/update/{{ $ayah->id }}">
             {{ csrf_field() }}
@@ -53,7 +53,7 @@
             <div class="form-group col-md-12">
                 <button type="submit" class="btn btn-primary">Save</button>
                 &nbsp;
-                <a href="/ayah" class="btn btn-danger">Cancel</a>
+                <a class="btn btn-danger" onclick="history.back()">Cancel</a>
             </div>
         </form>
     </div>

@@ -32,6 +32,7 @@ Route::get('/ayah', 'AyahController@index');
 Route::get('/ayah/find', 'AyahController@find');
 Route::get('/ayah/add', 'AyahController@create');
 Route::post('/ayah/store', 'AyahController@store');
+Route::get('/ayah/show/{id}', 'AyahController@show');
 Route::get('/ayah/edit/{id}', 'AyahController@edit');
 Route::put('/ayah/update/{id}', 'AyahController@update');
 Route::get('/ayah/delete/{id}', 'AyahController@destroy');

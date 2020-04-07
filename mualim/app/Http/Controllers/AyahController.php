@@ -39,7 +39,7 @@ class AyahController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    /*public function index()
     {
         // Get Name of Day and Day
         $day = Carbon::now()->format('l, d');
@@ -55,7 +55,7 @@ class AyahController extends Controller
         // Select All from Ayah
         $ayah = Ayah::all();
         return view('ayah', ['day' => $day, 'time' => $time, 'ayah' => $ayah, 'total' => $total]);
-    }
+    }*/
 
     /**
      * Show the form for creating a new resource.
@@ -97,7 +97,9 @@ class AyahController extends Controller
         ]);
  
         // Back to Surah Page
-        return redirect('/ayah');
+        return redirect()->action(
+            'AyahController@show', ['id' => $request->surah_no]
+        );
     }
 
     /**
@@ -108,7 +110,21 @@ class AyahController extends Controller
      */
     public function show($id)
     {
-        //
+        // Get Name of Day and Day
+        $day = Carbon::now()->format('l, d');
+
+        // Get Hours and Minutes
+        $time = Carbon::now();
+        $time->timezone('Asia/Jakarta');
+        $time = $time->format('H:i');
+
+        // Get Total Ayah
+        $total = Ayah::where('surah_id', $id)->count();
+
+        // Select Ayah based on Surah ID
+        $ayah = Ayah::where('surah_id', $id)->get();
+        $surah_name = Surah::where('id', $id)->pluck('nama_latin')->first();
+        return view('ayah', ['day' => $day, 'time' => $time, 'surah_name' => $surah_name, 'ayah' => $ayah, 'total' => $total]);
     }
 
     /**
@@ -153,7 +169,10 @@ class AyahController extends Controller
         $ayah->surah_id = $request->surah_no;
         $ayah->save();
 
-        return redirect('/ayah');
+        // Back to Surah Page
+        return redirect()->action(
+            'AyahController@show', ['id' => $request->surah_no]
+        );
     }
 
     /**
@@ -166,6 +185,6 @@ class AyahController extends Controller
     {
         $ayah = Ayah::find($id);
         $ayah->delete();
-        return redirect('/ayah');
+        return redirect()->back();
     }
 }

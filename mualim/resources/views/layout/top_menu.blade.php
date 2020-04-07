@@ -8,6 +8,6 @@
 	  			<span class="glyphicon glyphicon-bell text-body"></span>
 	  		</a>
 		  
-	    	<a href="" class="text-right">Logout</a>	
+	    	<!-- <a href="" class="text-right">Logout</a>	 -->
 	</div>
 </header>

@@ -25,7 +25,7 @@
                 <label for="inputNoSurah">Surah No</label>
                 <input type="text" name="surah_no" class="form-control" id="inputNoSurah" value="{{ $surah->id }}" readonly>
             </div>
-            <div class="form-group col-lg-4 col-md-4">
+            <div class="form-group col-lg-2 col-md-2">
                 <label for="inputTotalAyah">Total Ayah</label>
                 <input type="text" name="total_ayah" class="form-control" id="inputTotalAyah" value="{{ $surah->total_ayah }}">
             </div>

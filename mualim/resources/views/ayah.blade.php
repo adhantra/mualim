@@ -4,6 +4,7 @@
 
 <section id="content-1">
     <div class="col-md-12 col-sm-12 col-xs-12 box-1-alquran">
+        <p class="text-title-box">Surah {{ $surah_name }}</p>
         <p class="text-title-box">{{ $total }} Total Ayah</p>
         <br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 5px;padding: 0px;">
@@ -29,7 +30,6 @@
             <thead">
               <tr style="background-color: #FFF;">
                 <th width="2%" rowspan="2">Ayah No.</th>
-                <th width="10%" rowspan="2">Surah</th>
                 <th width="2%" rowspan="2">Page</th>
                 <th width="2%" rowspan="2">Juz</th>
                 <th colspan="4" class="text-center">Text</th>
@@ -38,7 +38,7 @@
               </tr>
               <tr>
                 <th width="15%">Arab</th>
-                <th width="15%">Latin</th>
+                <th width="13%">Latin</th>
                 <th width="15%">Indonesian</th>
                 <th width="15%">Tafsir</th>
               </tr>
@@ -47,13 +47,6 @@
             @foreach($ayah as $a)
               <tr>
                 <td>{{ $a->ayah_no }}</td>
-                <td>
-                    @if($a->surah->nama_latin == '')
-                        No Name
-                    @else
-                        {{ $a->surah->nama_latin }}
-                    @endif
-                </td>
                 <td>{{ $a->page }}</td>
                 <td>{{ $a->juz }}</td>
                 <td>{{ $a->text_arab }}</td>

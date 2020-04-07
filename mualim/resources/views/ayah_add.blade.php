@@ -52,7 +52,7 @@
             <div class="form-group col-md-12">
                 <button type="submit" class="btn btn-primary">Add</button>
                 &nbsp;
-                <a href="/ayah" class="btn btn-danger">Cancel</a>
+                <a class="btn btn-danger" onclick="history.back()">Cancel</a>
             </div>
         </form>
     </div>
