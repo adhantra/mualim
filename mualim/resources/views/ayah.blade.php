@@ -46,8 +46,14 @@
             <tbody>
             @foreach($ayah as $a)
               <tr>
-                <td>{{ $a->id }}</td>
-                <td>Al-Fathihah</td>
+                <td>{{ $a->ayah_no }}</td>
+                <td>
+                    @if($a->surah->nama_latin == '')
+                        No Name
+                    @else
+                        {{ $a->surah->nama_latin }}
+                    @endif
+                </td>
                 <td>{{ $a->page }}</td>
                 <td>{{ $a->juz }}</td>
                 <td>{{ $a->text_arab }}</td>

@@ -11,11 +11,11 @@
             {{ method_field('PUT') }}
             <div class="form-group col-lg-2 col-md-2">
                 <label for="inputNoSurah">Surah No.</label>
-                <input type="text" name="surah_no" class="form-control" id="inputNoSurah" value="{{ $ayah->surah_no }}">
+                <input type="text" name="surah_no" class="form-control" id="inputNoSurah" value="{{ $ayah->surah_id }}">
             </div>
             <div class="form-group col-lg-2 col-md-2">
                 <label for="inputAyat">Ayah No.</label>
-                <input type="text" name="ayah_no" class="form-control" id="inputAyat" value="{{ $ayah->id }}" readonly>
+                <input type="text" name="ayah_no" class="form-control" id="inputAyat" value="{{ $ayah->ayah_no }}">
             </div>
             <div class="form-group col-lg-2 col-md-2">
                 <label for="inputHalaman">Page</label>

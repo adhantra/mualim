@@ -14,4 +14,8 @@ class Surah extends Model
 
     // Disable timestamps
     public $timestamps = false;
+
+    public function ayah(){
+    	return $this->hasMany('App\Ayah');
+    }
 }

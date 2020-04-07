@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Ayah;
+use App\Surah;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 
@@ -84,7 +85,7 @@ class AyahController extends Controller
     {
         // Add Into Database
         Ayah::create([
-            'id' => $request->ayah_no,
+            'ayah_no' => $request->ayah_no,
             'page' => $request->page,
             'juz' => $request->juz,
             'text_arab' => $request->text_arab,
@@ -92,7 +93,7 @@ class AyahController extends Controller
             'text_indonesia' => $request->text_indonesia,
             'text_tafsir' => $request->text_tafsir,
             'tags' => $request->tags,
-            'surah_no' => $request->surah_no
+            'surah_id' => $request->surah_no
         ]);
  
         // Back to Surah Page
@@ -141,6 +142,7 @@ class AyahController extends Controller
     public function update(Request $request, $id)
     {
         $ayah = Ayah::find($id);
+        $ayah->ayah_no = $request->ayah_no;
         $ayah->page = $request->page;
         $ayah->juz = $request->juz;
         $ayah->text_arab = $request->text_arab;
@@ -148,7 +150,7 @@ class AyahController extends Controller
         $ayah->text_indonesia = $request->text_indonesia;
         $ayah->text_tafsir = $request->text_tafsir;
         $ayah->tags = $request->tags;
-        $ayah->surah_no = $request->surah_no;
+        $ayah->surah_id = $request->surah_no;
         $ayah->save();
 
         return redirect('/ayah');

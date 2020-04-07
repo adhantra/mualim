@@ -50,9 +50,9 @@
                     <a href="/surah/edit/{{ $s->id }}" class="btn btn-warning btn-sm">
                         <span class="glyphicon glyphicon-pencil"></span>
                     </a> 
-                    <a href="/surah/delete/{{ $s->id }}" class="btn btn-danger btn-sm">
+                    <!-- <a href="/surah/delete/{{ $s->id }}" class="btn btn-danger btn-sm">
                         <span class="glyphicon glyphicon-trash"></span>
-                    </a>
+                    </a> -->
                 </td>
               </tr>
               @endforeach

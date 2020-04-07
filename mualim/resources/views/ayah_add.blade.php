@@ -45,7 +45,7 @@
                 <textarea name="text_tafsir" id="Tafsir" cols="148" rows="3"></textarea>
             </div>
             <div class="form-group col-md-4">
-                <label for="inputTag">Tag</label>
+                <label for="inputTag">Tags</label>
                 <br>
                 <input type="text" name="tags" class="form-control" id="inputTag" placeholder="">
             </div>
