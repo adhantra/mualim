@@ -30,7 +30,7 @@
                 <th width="2%" rowspan="2">Surah No.</th>
                 <th colspan="3" class="text-center">Text</th>
                 <th width="8%" rowspan="2">Total Ayah</th>
-                <th width="10%" rowspan="2">Option</th>
+                <th width="5%" rowspan="2">Option</th>
               </tr>
               <tr>
                 <th>Arab</th>
