@@ -4,6 +4,7 @@
 
 <section id="content-1">
     <div class="col-md-12 col-sm-12 col-xs-12 box-1-alquran">
+        <p class="text-title-box">User</p>
         <p class="text-title-box">1 Total User</p>
         <br>
         <p><a href="">Today</a> &nbsp; <a href="">Week</a> &nbsp; <a href="">Month</a> &nbsp; <a href="">Year</a></p>

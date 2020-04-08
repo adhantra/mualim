@@ -43,7 +43,7 @@
             <div class="form-group col-md-12">
                 <label for="inputTafsir">Tafsir</label>
                 <br>
-                <textarea name="text_tafsir" id="Tafsir" cols="148" rows="3">{{ $ayah->text_tafsir }}</textarea>
+                <textarea name="text_tafsir" id="Tafsir" cols="148" rows="15">{{ $ayah->text_tafsir }}</textarea>
             </div>
             <div class="form-group col-md-4">
                 <label for="inputTag">Tag</label>

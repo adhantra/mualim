@@ -4,6 +4,7 @@
 
 <section id="content-1">
     <div class="col-md-12 col-sm-12 col-xs-12 box-1-alquran">
+        <p class="text-title-box">Al-Qur'an</p>
         <p class="text-title-box">{{ $total }} Total Surah</p>
         <br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 5px;padding: 0px;">
@@ -61,6 +62,7 @@
               @endforeach
             </tbody>
             </table>
+            <div align="center"> {{ $surah->links() }} </div>
         </p>
     </div>
 </section>

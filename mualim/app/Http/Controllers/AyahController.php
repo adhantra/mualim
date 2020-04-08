@@ -14,7 +14,7 @@ class AyahController extends Controller
      * Search
      * 
      */
-    public function find(Request $request)
+    /**public function find(Request $request)
     {
         // Get Name of Day and Day
         $day = Carbon::now()->format('l, d');
@@ -24,15 +24,15 @@ class AyahController extends Controller
         $time->timezone('Asia/Jakarta');
         $time = $time->format('H:i');
 
-        $nama = $request->nama;
+        $tags = $request->tags;
 
         // Get Total Ayah
         $total = Ayah::count();
 
         // Find Based Name
-        $find = Ayah::where('text_indonesia', 'LIKE', "%".$nama."%")->get();
+        $find = Ayah::where('tags', 'LIKE', "%".$tags."%")->get();
         return view('ayah', ['day' => $day, 'time' => $time, 'ayah' => $find, 'total' => $total]);
-    }
+    }**/
 
     /**
      * Display a listing of the resource.
@@ -62,7 +62,7 @@ class AyahController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
         // Get Name of Day and Day
         $day = Carbon::now()->format('l, d');
@@ -72,7 +72,10 @@ class AyahController extends Controller
         $time->timezone('Asia/Jakarta');
         $time = $time->format('H:i');
 
-        return view('ayah_add', ['day' => $day, 'time' => $time]);
+        $ayah = Ayah::where('surah_id', $id)->pluck('ayah_no')->last();
+        $ayah_no = $ayah+1;
+
+        return view('ayah_add', ['day' => $day, 'time' => $time, 'surah_no' => $id, 'ayah_no' => $ayah_no]);
     }
 
     /**
@@ -122,9 +125,10 @@ class AyahController extends Controller
         $total = Ayah::where('surah_id', $id)->count();
 
         // Select Ayah based on Surah ID
-        $ayah = Ayah::where('surah_id', $id)->get();
+        $ayah = Ayah::where('surah_id', $id)->paginate(10);
+        $surah_no = Surah::where('id', $id)->pluck('id')->first();
         $surah_name = Surah::where('id', $id)->pluck('nama_latin')->first();
-        return view('ayah', ['day' => $day, 'time' => $time, 'surah_name' => $surah_name, 'ayah' => $ayah, 'total' => $total]);
+        return view('ayah', ['day' => $day, 'time' => $time, 'surah_no' => $surah_no, 'surah_name' => $surah_name, 'ayah' => $ayah, 'total' => $total]);
     }
 
     /**

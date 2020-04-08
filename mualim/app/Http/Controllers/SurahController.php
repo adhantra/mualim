@@ -52,7 +52,7 @@ class SurahController extends Controller
         $total = Surah::count();
 
         // Select All from Surah
-        $surah = Surah::all();
+        $surah = Surah::paginate(10);
         return view('surah', ['day' => $day, 'time' => $time, 'surah' => $surah, 'total' => $total]);
     }
 

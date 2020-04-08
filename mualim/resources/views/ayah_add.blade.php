@@ -10,11 +10,11 @@
             {{ csrf_field() }}
             <div class="form-group col-lg-2 col-md-2">
                 <label for="inputNoSurah">Surah No.</label>
-                <input type="text" name="surah_no" class="form-control" id="inputNoSurah" placeholder="">
+                <input type="text" name="surah_no" class="form-control" id="inputNoSurah" placeholder="" value="{{ $surah_no }}">
             </div>
             <div class="form-group col-lg-2 col-md-2">
                 <label for="inputAyat">Ayah No.</label>
-                <input type="text" name="ayah_no" class="form-control" id="inputAyat" placeholder="">
+                <input type="text" name="ayah_no" class="form-control" id="inputAyat" placeholder="" value="{{ $ayah_no }}">
             </div>
             <div class="form-group col-lg-2 col-md-2">
                 <label for="inputHalaman">Page</label>
@@ -42,7 +42,7 @@
             <div class="form-group col-md-12">
                 <label for="inputTafsir">Tafsir</label>
                 <br>
-                <textarea name="text_tafsir" id="Tafsir" cols="148" rows="3"></textarea>
+                <textarea name="text_tafsir" id="Tafsir" cols="148" rows="15"></textarea>
             </div>
             <div class="form-group col-md-4">
                 <label for="inputTag">Tags</label>

@@ -9,8 +9,8 @@
         <br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 5px;padding: 0px;">
             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" style="padding-left: 0px;">
-                <form action="/ayah/find" method="GET" id="form_find"> 
-                    <input class="form-control urutkan" type="text" name="nama" placeholder="Search By Surah">
+                <form action="#" method="GET" id="form_find"> 
+                    <input class="form-control urutkan" type="text" name="tags" placeholder="Search By Tags">
                 </form>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" style="padding-left: 5px;">
@@ -22,7 +22,7 @@
                 </select>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-4 col-xs-6" align="right" style="padding-right: 0px;margin-bottom: 5px;">
-                <a class="btn btn-primary" href="/ayah/add">Add</a>
+                <a class="btn btn-primary" href="/ayah/add/{{ $surah_no }}">Add</a>
             </div>
         </div>
         <p>
@@ -49,9 +49,9 @@
                 <td>{{ $a->ayah_no }}</td>
                 <td>{{ $a->page }}</td>
                 <td>{{ $a->juz }}</td>
-                <td>{{ $a->text_arab }}</td>
-                <td>{{ $a->text_latin }}</td>
-                <td>{{ $a->text_indonesia }}</td>
+                <td>{!! \Illuminate\Support\Str::words($a->text_arab, 25,'....')  !!}</td>
+                <td>{!! \Illuminate\Support\Str::words($a->text_latin, 10,'....')  !!}</td>
+                <td>{!! \Illuminate\Support\Str::words($a->text_indonesia, 10,'....')  !!}</td>
                 <td>{!! \Illuminate\Support\Str::words($a->text_tafsir, 10,'....')  !!}</td>
                 <td>{{ $a->tags }}</td>
                 <td align="center">
@@ -66,6 +66,7 @@
             @endforeach
             </tbody>
             </table>
+            <div align="center"> {{ $ayah->links() }} </div>
         </p>
     </div>
 </section>

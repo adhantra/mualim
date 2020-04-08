@@ -30,7 +30,7 @@ Route::get('/surah/delete/{id}', 'SurahController@destroy');
 // Routes for Ayah
 Route::get('/ayah', 'AyahController@index');
 Route::get('/ayah/find', 'AyahController@find');
-Route::get('/ayah/add', 'AyahController@create');
+Route::get('/ayah/add/{id}', 'AyahController@create');
 Route::post('/ayah/store', 'AyahController@store');
 Route::get('/ayah/show/{id}', 'AyahController@show');
 Route::get('/ayah/edit/{id}', 'AyahController@edit');

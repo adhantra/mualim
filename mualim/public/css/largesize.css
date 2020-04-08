@@ -47,7 +47,7 @@ header {
 }
 
 body {
-	background-color: #DDD;
+	background-color: #ECECEC;
 }
 
 .body {
@@ -57,7 +57,7 @@ body {
 .left {
 	height: 500px;
 	background-color: #FFF;
-	border: 5px solid #DDD;
+	border: 5px solid #ECECEC;
 	border-radius: 15px;
 }
 
@@ -90,7 +90,7 @@ body {
 	height: 180px;
 	padding: 30px;
 	background-color: #FFF;
-	border: 5px solid #DDD;
+	border: 5px solid #ECECEC;
 	border-radius: 15px;
 }
 
@@ -98,7 +98,7 @@ body {
 	height: auto;
 	padding: 0px 30px 20px 30px;
 	background-color: #FFF;
-	border: 5px solid #DDD;
+	border: 5px solid #ECECEC;
 	border-radius: 15px;
 }
 
@@ -107,13 +107,13 @@ body {
 	padding: 30px;
 	margin-top: 20px;
 	background-color: #FFF;
-	border: 5px solid #DDD;
+	border: 5px solid #ECECEC;
 	border-radius: 15px;
 }
 
 .box-4-bawah {
 	padding: 30px;
 	background-color: #FFF;
-	border: 5px solid #DDD;
+	border: 5px solid #ECECEC;
 	border-radius: 15px;
 }
