@@ -99,7 +99,7 @@ class AyahController extends Controller
             'surah_id' => $request->surah_no
         ]);
  
-        // Back to Surah Page
+        // Back to Ayah Page
         return redirect()->action(
             'AyahController@show', ['id' => $request->surah_no]
         );
