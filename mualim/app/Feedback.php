@@ -10,7 +10,7 @@ class Feedback extends Model
     protected $table = 'feedback';
 
     // Fillable = Surah No
-    protected $fillable = ['id','user_id','title','text','time'];
+    protected $fillable = ['id','from','title','text','time'];
 
     // Disable timestamps
     public $timestamps = false;

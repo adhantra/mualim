@@ -38,7 +38,7 @@
               <tr>
                 <td>{{ $f->id }}</td>
                 <td>{{ $f->time }}</td>
-                <td>{{ $f->user_id }}</td>
+                <td>{{ $f->from }}</td>
                 <td>{{ $f->title }}</td>
                 <td>{{ $f->text }}</td>
                 <td align="center">
