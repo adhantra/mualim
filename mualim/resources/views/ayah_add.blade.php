@@ -49,6 +49,11 @@
                 <br>
                 <input type="text" name="tags" class="form-control" id="inputTag" placeholder="">
             </div>
+            <div class="form-group col-md-4">
+                <label for="inputTag">Cause</label>
+                <br>
+                <input type="text" name="cause" class="form-control" id="inputCause" placeholder="">
+            </div>
             <div class="form-group col-md-12">
                 <button type="submit" class="btn btn-primary">Add</button>
                 &nbsp;

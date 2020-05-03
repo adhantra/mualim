@@ -96,6 +96,7 @@ class AyahController extends Controller
             'text_indonesia' => $request->text_indonesia,
             'text_tafsir' => $request->text_tafsir,
             'tags' => $request->tags,
+            'cause' => $request->cause,
             'surah_id' => $request->surah_no
         ]);
  
@@ -170,6 +171,7 @@ class AyahController extends Controller
         $ayah->text_indonesia = $request->text_indonesia;
         $ayah->text_tafsir = $request->text_tafsir;
         $ayah->tags = $request->tags;
+        $ayah->cause = $request->cause;
         $ayah->surah_id = $request->surah_no;
         $ayah->save();
 

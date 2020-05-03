@@ -50,6 +50,11 @@
                 <br>
                 <input type="text" name="tags" class="form-control" id="inputTag" value="{{ $ayah->tags }}">
             </div>
+            <div class="form-group col-md-4">
+                <label for="inputTag">Cause</label>
+                <br>
+                <input type="text" name="cause" class="form-control" id="inputCause" value="{{ $ayah->cause }}">
+            </div>
             <div class="form-group col-md-12">
                 <button type="submit" class="btn btn-primary">Save</button>
                 &nbsp;

@@ -26,6 +26,7 @@ class CreateAyahTable extends Migration
             $table->longText('text_tafsir')->nullable();
 
             $table->string('tags')->nullable();
+            $table->string('cause')->nullable();
 
             $table->integer('surah_id')->unsigned()->nullable();
 

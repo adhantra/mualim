@@ -38,13 +38,13 @@
 </section>
 <!-- End of Users -->
 
-<!-- Sentiment -->
+<!-- Sentiment
 <section id="content-4">
     <div class="col-md-12 col-sm-12 col-xs-12 box-4">
         <p><a href="">Today</a> &nbsp; <a href="">Week</a> &nbsp; <a href="">Month</a> &nbsp; <a href="">Year</a></p>
         <p class="text-subtitle">Total Sentiment</p>
     </div>
 </section>
-<!-- End of Sentiment -->
+ End of Sentiment -->
 
 @endsection

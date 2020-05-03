@@ -34,6 +34,7 @@
                 <th width="2%" rowspan="2">Juz</th>
                 <th colspan="4" class="text-center">Text</th>
                 <th width="10%" rowspan="2">Tags</th>
+                <th width="10%" rowspan="2">Cause</th>
                 <th width="10%" rowspan="2">Option</th>
               </tr>
               <tr>
@@ -54,6 +55,7 @@
                 <td>{!! \Illuminate\Support\Str::words($a->text_indonesia, 10,'....')  !!}</td>
                 <td>{!! \Illuminate\Support\Str::words($a->text_tafsir, 10,'....')  !!}</td>
                 <td>{{ $a->tags }}</td>
+                <td>{{ $a->cause }}</td>
                 <td align="center">
                     <a href="/ayah/edit/{{ $a->id }}" class="btn btn-warning btn-sm">
                         <span class="glyphicon glyphicon-pencil"></span>

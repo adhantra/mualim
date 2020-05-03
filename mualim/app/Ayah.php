@@ -10,7 +10,7 @@ class Ayah extends Model
     protected $table = 'ayah';
 
     // Fillable = Surah No
-    protected $fillable = ['ayah_no','page','juz','text_arab','text_latin','text_indonesia','text_tafsir','tags','surah_id'];
+    protected $fillable = ['ayah_no','page','juz','text_arab','text_latin','text_indonesia','text_tafsir','tags','cause','surah_id'];
 
     // Disable timestamps
     public $timestamps = false;
