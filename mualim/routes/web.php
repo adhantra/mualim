@@ -14,8 +14,12 @@ use Carbon\Carbon;
 |
 */
 
+// Routes for Login
+Route::get('/', 'LoginController@index');
+Route::get('/login_process', 'LoginController@login');
+
 // Routes for Home
-Route::get('/', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
 
 // Routes for Surah
 Route::get('/surah', 'SurahController@index');

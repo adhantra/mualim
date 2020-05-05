@@ -21,12 +21,12 @@
 <!-- End of Alquran -->
 
 <!-- Users -->
-<section id="content-3">
+<!-- <section id="content-3">
     <div class="col-md-6 col-sm-6 col-xs-12 box-3">
         <p class="text-center text-title">Users</p>
         <p class="text-center text-subtitle">1 Users</p>
     </div>
-</section>
+</section> -->
 <!-- End of Users -->
 
 <!-- Users -->
