@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mualim-iwfkke",
+  "private_key_id": "6f6e93ef245f774e67b94c1f44c3ae9df228daea",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDecxUkF1++Afg7\ndUIG1hNYnsV0ZlMbOGgUGyTFL6InnlRQhI8vFC507rGv3gToSlwHLTT0asO2dW5K\noV0vDfDMa5xOeOyHkd00s7Eq3hr1o3HEEjsBxxRBJ7e4qUKAdvUDJzyS41pnSq8z\nq6XKvvgQTKdvY6mBcsRQmYFFZKfQyCqVGdbtrEmTiz7M9JgKFnW8Uv9P7DOQVeHE\n4RQEQSn/u3t+9+FHH1je/bAfZYdFs9EdLPrYjwQfNfrHNBjYM3Wi7ocSdl4Aw/We\nfVXdrwFrPoaN3LMPuASJoMceCiikcaNs/XziBS8cgCS14uS5AaPbgBh0y8k/eIHv\nflbGdrvZAgMBAAECggEAGQsvSOApywA5RGZj39WnmW1MkRl5B0I/M25H4jxF3vx8\nBRGbdiMpRMhfsEtIVaeTe0pbYR4I+Sh42YWXslW5M6Z00z/ZbzzcgNOvIUKemeOE\nCh08T+usC9bPIAbMQh7CYE/BSc83TRQzK9fKA0yjLGCY5Bk+CuETGXjivR+DJiXB\nKxcvJaCjlT8GKZ3GDF/C8pQPsZecq5d2QWHufl585Occ4b7zsgCMUZku0wXQr00i\nkCeC0gu+KaEWyLjfSEua5DWD6x7Qy/g48k0NxrIQYUmeY5L6+UHPWyTyupQL+GAc\nIGsyIkLI+nlJDEs74S4IjKiyuG8lPJX0BGI0nBPfFQKBgQDxTOZXMUX5ZnohckF7\nvPJF9eHaEB+MJmtfAoCahrLFM/DQRetXBsyx5xFd1vP/u1eBgo9912hZ9MvgL+8n\nEkIne2VGT41Y1Nc+X/8XTWuuZ4wtl+zIp/axtpoeHvIANf65/SMAhjpaZEI+C6aZ\nEYpSk1Pt2Btqsqazcuj6uW/mrQKBgQDsADPErz+X2r7aLUZ+8n6WCBH7D8BcvVka\nTU3bAN/uIzfXJRquUefT4wJ8jbpKJkahWz1EU178w+u1DtQKp0z+QTKPJRfqXgRm\nLLy2gD0caD0cPmElcSOxbRXp53cRmFnTf8Aqpk5XCisqBFdnpgvqPC9YamaiGKYa\nSXe4YtCLXQKBgEIvjZ6s7TyTVzyFUmDWWr3Fy8U8VuriPuE4ln3MJIziylLWWs7s\nFolVj/XlV9f1UvM7FJC33O+Prbw4aaiV4X9i4Ux/1Y1gFAoP2rBRlA+qZ1C6M0B2\nkbv9Ehjg9BAKv2vUex1Rs//HMEREfdXOcdpkfsjmVd7WUdM22aCr7H2hAoGAO3mB\nklun5xkVZ95pGaz7Acxe26qIi9acEejRahO6W0U82VdcdfnmNpvLEKCXBgDHY/qe\nYg2wrnqheCuYfGbVHG5J05FBiarP6P/1PvjqbbJHVErUKJ9uo1QeZagTdbezS32y\nbA0lSQIjBp+5d0F9VzZ7qAiIfOlBUvaY2Trt23ECgYAU4P7yZnFPhsXg8zdcLmRG\ni85DjMft9LGZnK1mXbiaRrCZ0P4Sm+Q5tRdcJqINnUnhL4Tfy6smWsZv2OtX79ZG\nCq1q4qCYRLLbk6lWlgu6WPZhzD3XOYNZ6cmxHxjiiw2lkVeFs58tO1Wq1nu3RnLA\nLvP0DAtt/0BIu7SaAWM8zA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "android-integrate@mualim-iwfkke.iam.gserviceaccount.com",
+  "client_id": "112897691327869341279",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/android-integrate%40mualim-iwfkke.iam.gserviceaccount.com"
+}
