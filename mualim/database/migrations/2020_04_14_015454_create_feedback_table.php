@@ -19,8 +19,6 @@ class CreateFeedbackTable extends Migration
             $table->string('from');
             $table->string('title');
             $table->text('text');
-
-            $table->timestamps();
         });
     }
 

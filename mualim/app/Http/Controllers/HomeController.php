@@ -31,7 +31,14 @@ class HomeController extends Controller
         $total_ayah = Ayah::count();
         // Get Total Feedback
         $total_feedback = Feedback::count();
-        return view('home', ['day' => $day, 'time' => $time, 'total_surah' => $total_surah, 'total_ayah' => $total_ayah, 'total_feedback' => $total_feedback]);
+
+        // Select All from Surah
+        $surah = Surah::all();
+
+        // Select All from Feedback
+        $feedback = Feedback::paginate(4);
+
+        return view('home', ['day' => $day, 'time' => $time, 'total_surah' => $total_surah, 'total_ayah' => $total_ayah, 'total_feedback' => $total_feedback, 'surah' => $surah, 'feedback' => $feedback]);
     }
 
     /**

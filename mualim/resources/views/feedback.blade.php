@@ -37,7 +37,7 @@
               @foreach($feedback as $f)
               <tr>
                 <td>{{ $f->id }}</td>
-                <td>{{ $f->time }}</td>
+                <td>{{ $f->created_at }}</td>
                 <td>{{ $f->from }}</td>
                 <td>{{ $f->title }}</td>
                 <td>{{ $f->text }}</td>

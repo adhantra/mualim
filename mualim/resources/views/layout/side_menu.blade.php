@@ -16,9 +16,9 @@
 				<a href="/surah" class="text-menu">Al-Qur'an</a>
 			</li>
 			<br>
-			<!-- <li>
+			<li>
 				<a href="/user" class="text-menu">Users</a>
-			</li> -->
+			</li>
 			<li>
 				<a href="/feedback" class="text-menu">Feedback</a>
 			</li>

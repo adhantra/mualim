@@ -14,7 +14,7 @@ class AyahController extends Controller
      * Search
      * 
      */
-    /**public function find(Request $request)
+    public function find(Request $request)
     {
         // Get Name of Day and Day
         $day = Carbon::now()->format('l, d');
@@ -32,7 +32,7 @@ class AyahController extends Controller
         // Find Based Name
         $find = Ayah::where('tags', 'LIKE', "%".$tags."%")->get();
         return view('ayah', ['day' => $day, 'time' => $time, 'ayah' => $find, 'total' => $total]);
-    }**/
+    }
 
     /**
      * Display a listing of the resource.
