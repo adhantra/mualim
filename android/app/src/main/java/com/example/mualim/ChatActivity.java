@@ -102,12 +102,15 @@ public class ChatActivity extends AppCompatActivity {
 
     public void callback(DetectIntentResponse response) {
         if (response != null) {
-            // process aiResponse here
             String botReply = response.getQueryResult().getFulfillmentText();
             Log.d(TAG, "ChatBot Reply: " + botReply);
-            showTextView(botReply, BOT);
+            if(botReply == "") {
+                showTextView("Maaf kak, saya belum bisa ngerespon yang ini. \nCoba yang lain kak? 🙏", BOT);
+            } else {
+                showTextView(botReply, BOT);
+            }
         } else {
-            Log.d(TAG, "Bot Reply: Null");
+            Log.d(TAG, "ChatBot Reply: Null");
             showTextView("Oops, sepertinya ada masalah koneksi nih kak!", BOT);
         }
     }
